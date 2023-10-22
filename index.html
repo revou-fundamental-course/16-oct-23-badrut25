@@ -6,17 +6,64 @@
 <html lang = "en">
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" conten = "width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
     <link rel="stylesheet" href = "./css/style.css">
 </head>
 
 <body>
-    <h1>Hello world!</h1>
+    <header class="header">
+        <div class="nav-logo">
+            <img src="./assets/revoUlogo.jpg" alt="revou-logo">
+        </div>
+        <nav class="nav">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Our Profile</a>
+            <a class="nav-item">Portofolio</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="greetings">
+            <h1> Hi, My Name Is Badrut</h1>
+            <p> ini adalah latihan website pertama</p>
+        </div>
+    </section>
+
+    <section class="headquarters">
+        <h1>Our Headquarters</h1>
+        <div class="hq-items">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <section id="message-us" class="form">
+        <h1 class="message-us">Message Us</h1>
+        <div class="form_left">
+            <form>
+                <table>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>
+                        <input id="nama" name="nama" type="text" placeholder="Nama">
+                    </td>
+                </table>
+            </form>
+        </div>
+
+        <div class="form-right">
+            <form></form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <center>
+            <p class="footer-text">made by Badrut</p>
+        </center>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
-
-<footer>
-    
-</footer>
 </html>
