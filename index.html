@@ -12,58 +12,127 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <div class="nav-logo">
             <img src="./assets/revoUlogo.jpg" alt="revou-logo">
         </div>
         <nav class="nav">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Our Profile</a>
-            <a class="nav-item">Portofolio</a>
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#our-profile" class="nav-item">Our Profile</a>
+            <a href="#portofolio" class="nav-item">Portofolio</a>
             <a href="#message-us" class="nav-item">Message Us</a>
         </nav>
     </header>
 
-    <section class="banner">
+    <section id="our-profile" class="banner">
         <div class="greetings">
-            <h1> Hi, My Name Is Badrut</h1>
-            <p> ini adalah latihan website pertama</p>
+            <h1> Hi Badrut, Welcome To Website</h1>
+            <p> ini adalah website latihan pertama</p>
         </div>
     </section>
 
-    <section class="headquarters">
+    <section id="portofolio" class="headquarters">
         <h1>Our Headquarters</h1>
         <div class="hq-items">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+            <div class="circle">
+                <img src="./assets/Jakarta.webp" alt="Jakarta" width="100" height="100">
+                <p>Jakarta</p>
+            </div>
+            <div class="circle">
+                <img src="./assets/bandung.jpg" alt="Bandung" width="100" height="100">
+                <p>Bandung</p>
+            </div>
+            <div class="circle">
+                <img src="./assets/surabayaicon.jpg" alt="Surabaya" width="100" height="100">
+                <p>Surabaya</p>
+            </div>
         </div>
     </section>
 
     <section id="message-us" class="form">
         <h1 class="message-us">Message Us</h1>
-        <div class="form_left">
-            <form>
-                <table>
-                    <td>Nama</td>
-                    <td>:</td>
-                    <td>
-                        <input id="nama" name="nama" type="text" placeholder="Nama">
-                    </td>
-                </table>
-            </form>
-        </div>
+        <div class="form1">
+            <div class="form-left">
+                <form class="form-left-top">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>
+                                <input name="full-name" type="text" placeholder="Nama" style="min-width:300px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td>:</td>
+                            <td>
+                                <input name="birth-date" type="date" style="min-width:303px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td>
+                                <input id="male" type="radio" name="gender" value="male">
+                                <label for="male">Laki-Laki</label>
+                                <input id="female" type="radio" name="gender" value="female">
+                                <label for="female">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr class="pesan">
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td>
+                                <textarea placeholder="Pesan" name="messages" style="min-width:305px; min-height:100px"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Submit" style="min-width:400px">
+                </form>
+            </div>
 
-        <div class="form-right">
-            <form></form>
+            <div class="form-right">
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-messages"></span></p>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
-        <center>
-            <p class="footer-text">made by Badrut</p>
-        </center>
+        <p class="footer-text">made by Badrut</p>
     </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
+
+
+<!-- <form name="message-form" onsubmit="return validateForm()">
+    Nama: <input placeholder="Nama" type="text" name="full-name"/>
+    <br/>
+
+    Tanggal Lahir:
+    <input type="date" name="birth-date" />
+    <br/>
+
+    Jenis Kelamin:
+    <input type="radio" id="male" name="gender" value="male" />
+    <label for="male">Laki-Laki</label>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Perempuan</label>
+    <br/>
+
+    Pesan:
+    <textarea placeholder="Pesan" name="messages"></textarea>
+    <br/>
+
+    <input type="submit" value="Submit" />
+</form> -->
+
+<!-- <div>
+    <p>Nama: <span id="sender-full-name"></span></p>
+    <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+    <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+    <p>Pesan: <span id="sender-messages"></span></p>
+</div> -->

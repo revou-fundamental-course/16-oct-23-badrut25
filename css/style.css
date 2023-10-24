@@ -2,8 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0cm 0.5cm;
-    border-bottom: 1px solid darkslategrey; 
+    padding: 0.1cm 0cm;
+    border-bottom: 1px solid darkslategrey;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 98.7%;
+    background-color: white;
 }
 
 .nav-logo img{
@@ -12,6 +17,10 @@
 
 .nav{
     display: flex;
+    /* overflow: hidden; */
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100%; */
 }
 
 .nav-item{
@@ -21,6 +30,7 @@
     text-align: center;
     text-decoration: none;
     color: black;
+    /* position: fixed; */
 }
 
 .nav-item:hover{
@@ -34,34 +44,79 @@
 }
 
 .banner{
+    padding: 3em;
     border-bottom: 1px solid black;
-    background-image: url("../assets/background1.jpg");
+    background-image: url("../assets/background_electronic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
 }
 
 .headquarters{
-    padding: 1em;
+    border-top: 1px solid black;
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-bottom: 2em;
 }
 
 .hq-items{
-    padding: 2em 3em;
+    padding-left: 4em;
+    padding-right: 30em;
     display: flex;
     justify-content: space-around;
 }
 
 .circle{
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
+    /* height: 1px; */
+    /* width: 1px; */
+    /* border: 1px solid black; */
+    /* border-radius: 50%; */
+    text-align: center;
+}
+
+.circle img{
     border-radius: 50%;
 }
 
-.message-us{
-    padding: 1em;
+.form1{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3em;
+    padding-right: 5em;
+    padding-bottom: 2em;
 }
+
+.message-us{
+    border-top: 1px solid black;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+.form-left{
+    /* padding-left: 3em; */
+    font-size: small;
+}
+
+/* .form-left-top{ */
+    /* padding-bottom: 2em; */
+/* } */
+
+.pesan{
+    /* text-align: left; */
+    vertical-align: top;
+}
+
+.form-right{
+    border: 1px solid black;
+}
+
+.footer{
+    border-top: 1px solid black;
+}
+
 .footer-text{
     color: gray;
     font-size: small;
+    text-align: right;
+    padding-right: 1em;
 }
